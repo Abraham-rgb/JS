@@ -1,7 +1,18 @@
 // Ciclo Do while
 
-do {
-    i++
-    document.write(i);
+let contador = 99;
 
-}while (i < 5 );
+do{
+    contador++
+}while (contador < 100);
+
+alert(contador);
+
+
+
+
+// do {
+//     i++
+//     document.write(i);
+
+// }while (i < 5 );
