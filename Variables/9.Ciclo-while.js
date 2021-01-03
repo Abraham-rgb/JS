@@ -21,4 +21,7 @@ while (n < 3) {
   x += n;
 }
 
+
+
+
 alert(n);

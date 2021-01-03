@@ -4,8 +4,8 @@ for (i = 0; i <= 5; i++) {
   suma += '10';
 };
 
-let array =[ 1, 2, 3, 4, 5 ] ;
-let arraySuma = 0;
+let array =[ 1, 2, 3, 4, 5 ] 
+let arraySuma = 0
 for ( i = 0; i < 5; i ++) {
   arraySuma = arraySuma + array[i];
   // 1. 0 =  0 + 1 = 1 

@@ -7,6 +7,8 @@ do{
 }while (contador < 100);
 
 alert(contador);
+
+
 // let number = 10;
 // do{
 //     number++
