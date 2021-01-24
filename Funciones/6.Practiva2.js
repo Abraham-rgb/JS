@@ -1,50 +1,63 @@
-let temperatura = [10, 30, 40, 50, 12, 8, 13, 14, 20, 18, 17, 19, 21, 23, 22, 25, 16, 5, 2, -10, 11, 37, 15, 31, 0];
+// let temperatura = [10, 30, 40, 50, 12, 8, 13, 14, 20, 18, 17, 19, 21, 23, 22, 25, 16, 5, 2, -10, 11, 37, 15, 31, 0];
 
-let datos = ((array)=>{
-    let tempmax = 0;
-    let tempmin = 100;
-    let prometem = 0;
-    let horas = [];
+// let datos = ((array)=>{
+//     let tempmax = 0;
+//     let tempmin = 100;
+//     let prometem = 0;
+//     let horas = [];
     
-    for (i = 0; i < 24; i++) {
+//     for (i = 0; i < 24; i++) {
 
-        if (array[i] > tempmax) {
+//         if (array[i] > tempmax) {
         
-        tempmax = array[i];
+//         tempmax = array[i];
         
-        horas[1] = i;
+//         horas[1] = i;
         
-        }
+//         }
         
-        if (array[i] < tempmin) {
+//         if (array[i] < tempmin) {
         
-        tempmin = array[i];
+//         tempmin = array[i];
         
-        horas[2] = i;
+//         horas[2] = i;
         
-        }
+//         }
         
-        prometem += array[i];
+//         prometem += array[i];
         
-        }
+//         }
         
-        let promedio = prometem / 24;
+//         let promedio = prometem / 24;
         
-        let resultado = [
+//         let resultado = [
         
-        tempmax, horas[1],
+//         tempmax, horas[1],
         
-        tempmin, horas[2],
+//         tempmin, horas[2],
         
-        promedio
+//         promedio
         
-        ]
+//         ]
         
-        return resultado;
+//         return resultado;
         
-        })(temperatura);
+//         })(temperatura);
 
-        console.log(`la temperatura maxima fue ${datos[0]}°C, alas ${datos[1]}:00hr.`)
-        console.log(`la temperaturatura minima fue ${datos[2]}°C, alas ${datos[3]}:00hr.`)
-        console.log(`El promedio de la temperatura es ${datos[4]}`);
+//         console.log(`la temperatura maxima fue ${datos[0]}°C, alas ${datos[1]}:00hr.`)
+//         console.log(`la temperaturatura minima fue ${datos[2]}°C, alas ${datos[3]}:00hr.`)
+//         console.log(`El promedio de la temperatura es ${datos[4]}`);
+
+let numero = 1245
+
+let inverso = (numero) =>{
+    let unidades = numero % 10 
+    let decenas = parseInt ((numero % 100) / 10);
+    let centenas = parseInt ((numero % 1000)/ 100)
+    let unidadesM = parseInt((numero % 10000)/1000)
+    let inversa = parseInt( "" + unidades + decenas + centenas + unidadesM)
+    return inversa;
+}
+let resultado = inverso(numero);
+console.log(resultado);
 
